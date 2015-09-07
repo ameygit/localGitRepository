@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.example.plugins.model.impl.PartsModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID_" />
+			</id>
+			<basic name="part_number" />
+			<basic name="description" />
+			<basic name="item_type" />
+			<basic name="status" />
+			<basic name="status_description" />
+			<basic name="legacy_part_number" />
+			<basic name="alternate_item" />
+			<basic name="unit_cost_material_cost" />
+			<basic name="royalty_cost" />
+			<basic name="product_code" />
+			<basic name="product_code_description" />
+			<basic name="product_group" />
+			<basic name="product_group_description" />
+			<basic name="discount_group" />
+			<basic name="discount_group_description" />
+			<basic name="us_price_msrp" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.example.plugins.model.impl.PartsImpl" name="Parts">
+		<table name="nec_Parts" />
+		<attributes />
+	</entity>
+</entity-mappings>

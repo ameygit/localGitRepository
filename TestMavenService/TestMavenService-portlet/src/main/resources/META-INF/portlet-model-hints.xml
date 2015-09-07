@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.example.plugins.model.Parts">
+		<field name="id" type="long" />
+		<field name="part_number" type="String" />
+		<field name="description" type="String" />
+		<field name="item_type" type="String" />
+		<field name="status" type="String" />
+		<field name="status_description" type="String" />
+		<field name="legacy_part_number" type="String" />
+		<field name="alternate_item" type="String" />
+		<field name="unit_cost_material_cost" type="double" />
+		<field name="royalty_cost" type="double" />
+		<field name="product_code" type="String" />
+		<field name="product_code_description" type="String" />
+		<field name="product_group" type="String" />
+		<field name="product_group_description" type="String" />
+		<field name="discount_group" type="String" />
+		<field name="discount_group_description" type="String" />
+		<field name="us_price_msrp" type="double" />
+	</model>
+</model-hints>

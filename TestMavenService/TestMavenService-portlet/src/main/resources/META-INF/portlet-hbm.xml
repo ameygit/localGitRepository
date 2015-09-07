@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.example.plugins.model.Parts" />
+	<class name="com.example.plugins.model.impl.PartsImpl" table="nec_Parts">
+		<cache usage="read-write" />
+		<id name="id" column="id_" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="part_number" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="item_type" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status_description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="legacy_part_number" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="alternate_item" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="unit_cost_material_cost" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="royalty_cost" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="product_code" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="product_code_description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="product_group" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="product_group_description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="discount_group" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="discount_group_description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="us_price_msrp" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+	</class>
+</hibernate-mapping>
