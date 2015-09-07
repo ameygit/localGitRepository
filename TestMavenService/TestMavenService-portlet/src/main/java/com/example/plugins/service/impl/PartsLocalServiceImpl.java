@@ -22,4 +22,9 @@ public class PartsLocalServiceImpl extends PartsLocalServiceBaseImpl {
      *
      * Never reference this interface directly. Always use {@link com.example.plugins.service.PartsLocalServiceUtil} to access the parts local service.
      */
+	
+	public void displayServiceName(){
+		System.out.println("");
+		
+	}
 }
