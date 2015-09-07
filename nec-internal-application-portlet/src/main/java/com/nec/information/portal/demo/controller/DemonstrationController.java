@@ -45,7 +45,7 @@ import org.springframework.web.portlet.bind.annotation.ActionMapping;
 import org.springframework.web.portlet.bind.annotation.RenderMapping;
 
 
-
+/// merged and test
 @Controller
 @RequestMapping("VIEW")
 public class DemonstrationController {
